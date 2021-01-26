@@ -1,0 +1,34 @@
+@import "../variables";
+
+.nav-container {
+  width: 100%;
+}
+.nav-inner {
+  display: flex;
+  max-width: 300px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.nav-item {
+  text-align: center;
+  -webkit-filter: saturate(10px);
+  -ms-filter: saturate(10px);
+  filter: saturate(10%);
+  opacity: 0.6;
+}
+.active {
+  -webkit-filter: none;
+  -ms-filter: none;
+  filter: none;
+  opacity: 1;
+}
+.nav-img {
+  width: 6rem;
+}
+.nav-text {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: $color-main;
+}
