@@ -1,5 +1,5 @@
 import Head from "next/head";
-import "../styles/variables.scss";
+import "styles/variables.scss";
 
 export default function Home() {
   return (
