@@ -1,0 +1,20 @@
+@import "../variables";
+
+.header-container {
+  padding: 3.6rem 0;
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title {
+  font-size: $font-size-h2;
+}
+
+.header-text {
+  font-size: $font-size-p;
+}
