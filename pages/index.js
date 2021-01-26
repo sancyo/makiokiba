@@ -1,4 +1,5 @@
 import Head from "next/head";
+import "../styles/variables.scss";
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <div className="example">Hello World!</div>
       </main>
 
       <footer>
