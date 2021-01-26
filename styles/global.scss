@@ -1,0 +1,7 @@
+@use "~normalize.css";
+
+@import "variables";
+
+html {
+  background-color: $color-bg;
+}
