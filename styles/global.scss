@@ -1,7 +1,7 @@
-@use "~normalize.css";
-
+@import "~normalize.css";
 @import "variables";
 
 html {
   background-color: $color-bg;
+  color: $color-body;
 }
