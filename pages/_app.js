@@ -5,10 +5,10 @@ import ThePageHeader from "../components/organisms/ThePageHeader";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Container>
+    <div>
       <ThePageHeader />
       <Component {...pageProps} />
-    </Container>
+    </div>
   );
 }
 
