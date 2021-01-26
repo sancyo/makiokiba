@@ -1,0 +1,63 @@
+@import "../variables";
+
+$line-distance: 11%;
+
+.career-card {
+  position: relative;
+  width: 70%;
+  text-align: left;
+  padding: 1.6rem;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+/*
+.career-card:nth-child(even) {
+  background: #fff;
+  margin-top: 6rem;
+  margin-left: 2.8rem;
+}
+.career-card:nth-child(even)::after {
+  position: absolute;
+  top: 50%;
+  width: $line-distance;
+  height: 0.3rem;
+  left: -$line-distance;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: $color-main;
+  content: "";
+}
+.career-card:nth-child(odd) {
+  background: #fff;
+  margin-right: 2.8rem;
+}
+.career-card:nth-child(odd)::after {
+  position: absolute;
+  top: 50%;
+  width: $line-distance;
+  height: 0.3rem;
+  right: -$line-distance;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: $color-main;
+  content: "";
+}
+*/
+.career-period {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: $color-main;
+}
+.career-title {
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
+}
+.career-desc {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-top: 0.6rem;
+}

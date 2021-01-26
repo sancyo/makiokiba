@@ -6,11 +6,10 @@ import "../styles/pages/index.scss";
 export default function Home({ output }) {
   const outputArray = output.slice();
   console.log(outputArray);
-  console.log("hoge");
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>makiokiba</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
