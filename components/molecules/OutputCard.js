@@ -1,7 +1,6 @@
 import "../../styles/components/OutputCard.scss";
 
 const OutputCard = (props) => {
-  console.log(props.value);
   const item = props.value;
   return (
     <div className="output-card">

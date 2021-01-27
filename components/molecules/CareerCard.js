@@ -1,7 +1,6 @@
 import "../../styles/components/CareerCard.scss";
 
 const OutputCard = (props) => {
-  console.log(props.value);
   const item = props.value;
   return (
     <div className="career-card">

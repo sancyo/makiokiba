@@ -18,3 +18,18 @@
 .header-text {
   font-size: $font-size-p;
 }
+
+.sns-icon {
+  width: 2.4rem;
+  -webkit-filter: saturate(10px);
+  -ms-filter: saturate(10px);
+  filter: saturate(10%);
+  opacity: 0.3;
+  min-height: 2.4rem;
+  transition: 0.2s;
+}
+
+.sns-icon:hover {
+  filter: none;
+  opacity: 1;
+}
