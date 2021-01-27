@@ -1,7 +1,7 @@
 import Head from "next/head";
 import SkillCard from "../components/molecules/SkillCard";
 import "../styles/global.scss";
-import "../styles/pages/more.scss";
+import "../styles/pages/skill.scss";
 
 const More = ({ skill }) => {
   const skillArray = skill.slice();
