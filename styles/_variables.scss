@@ -1,3 +1,8 @@
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
 $color-main: #df9174; /* メインカラー */
 $color-sub: #ddc590; /* サブカラー */
 $color-bg: #e9eae4; /* 背景用 */
@@ -8,3 +13,7 @@ $width-pc: 1024px;
 
 $font-size-h2: 3.2rem;
 $font-size-p: 1.6rem;
+
+$breakpoints: (
+  "pc": "screen and (min-width: 768px)",
+) !default;

@@ -1,9 +1,15 @@
+@import "../variables";
+
 .skill-card-inner {
   background: #fff;
   border-radius: 8px;
   padding: 2.8rem;
   margin: 3rem auto;
-  width: 50%;
+  width: 70%;
+  @include mq(pc) {
+    width: 60%;
+    background: #fff;
+  }
 }
 .skill-card-list {
   padding: 0;

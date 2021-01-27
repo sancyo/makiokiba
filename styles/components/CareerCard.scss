@@ -4,7 +4,7 @@ $line-distance: 11%;
 
 .career-card {
   position: relative;
-  width: 70%;
+  width: 100%;
   text-align: left;
   padding: 2.2rem;
   box-sizing: border-box;
@@ -12,6 +12,11 @@ $line-distance: 11%;
   border-radius: 8px;
   margin: 0 auto;
   margin-bottom: 2rem;
+
+  @include mq(pc) {
+    width: 70%;
+    background: #fff;
+  }
 }
 /*
 .career-card:nth-child(even) {
