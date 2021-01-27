@@ -31,17 +31,15 @@ const ThePageNav = (props) => {
             </a>
           </Link>
         </li>
-        <li
-          className={props.page === "/skill" ? "nav-item active" : "nav-item"}
-        >
-          <Link href="/skill">
+        <li className={props.page === "/more" ? "nav-item active" : "nav-item"}>
+          <Link href="/more">
             <a>
               <img
                 className="nav-img"
                 src="../../static/top-image.png"
                 alt="スキル"
               />
-              <span className="nav-text">スキル</span>
+              <span className="nav-text">More</span>
             </a>
           </Link>
         </li>
