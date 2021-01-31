@@ -5,7 +5,6 @@ import "../styles/pages/index.scss";
 
 export default function Home({ output }) {
   const outputArray = output.slice();
-  console.log(outputArray);
   return (
     <div className="container">
       <Head>
@@ -31,10 +30,7 @@ export const getStaticProps = async () => {
   const key = {
     headers: { "X-API-KEY": process.env.API_KEY },
   };
-  const data = await fetch(
-    "https://designdock02.microcms.io/api/v1/output",
-    key
-  )
+  const data = await fetch("https://designdock02.microcms.io/api/v1/output", key)
     .then((res) => res.json())
     .catch(() => null);
   return {
