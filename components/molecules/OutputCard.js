@@ -2,6 +2,29 @@ import "../../styles/components/OutputCard.scss";
 
 const OutputCard = (props) => {
   const item = props.value;
+  const link = (link) => {
+    if (link === "no") {
+      return;
+    } else {
+      return (
+        <a className="link output-link" href={link} target="_blank" rel="noopener noreferrer">
+          {link}
+        </a>
+      );
+    }
+  };
+  const githubLink = (gitLink) => {
+    if (gitLink === "no") {
+      return;
+    } else {
+      return (
+        <a className="link" href={gitLink} target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      );
+    }
+  };
+  const site = item.link === "no" ? "" : "";
   return (
     <div className="output-card">
       <time className="output-date">{item.date}</time>
@@ -17,14 +40,8 @@ const OutputCard = (props) => {
           );
         })}
       </div>
-      <a
-        className="output-link"
-        href={item.link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {item.link}
-      </a>
+      {link(item.link)}
+      {githubLink(item.github)}
     </div>
   );
 };
